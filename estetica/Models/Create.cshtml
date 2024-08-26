@@ -1,0 +1,35 @@
+﻿@page
+@model ClinicaEsteticaApp.Pages.CreateModel
+
+<h1>Novo Agendamento</h1>
+
+<form method="post">
+    <label for="PacienteId">Paciente:</label>
+    <select name="Agendamento.PacienteId" id="PacienteId" required>
+        <option value="">Selecione um Paciente</option>
+        @foreach (var paciente in Model.Pacientes)
+        {
+            <option value="@paciente.Id">@paciente.Nome</option>
+        }
+    </select><br />
+
+    <label for="MedicoId">Médico:</label>
+    <select name="Agendamento.MedicoId" id="MedicoId" required>
+        <option value="">Selecione um Médico</option>
+        @foreach (var medico in Model.Medicos)
+        {
+            <option value="@medico.Id">@medico.Nome</option>
+        }
+    </select><br />
+
+    <label for="DtaAgendamento">Data:</label>
+    <input type="date" name="Agendamento.DtaAgendamento" id="DtaAgendamento" required /><br />
+
+    <label for="Hora">Hora:</label>
+    <input type="time" name="Agendamento.Hora" id="Hora" required /><br />
+
+    <label for="Especialidade">Especialidade:</label>
+    <input type="text" name="Agendamento.Especialidade" id="Especialidade" required /><br />
+
+    <button type="submit">Agendar</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+
+<h1>Agendamentos</h1>
+
+<table>
+    <tr>
+        <th>Paciente</th>
+        <th>Médico</th>
+        <th>Data</th>
+        <th>Hora</th>
+        <th>Especialidade</th>
+    </tr>
+    @foreach (var agendamento in Model.Agendamentos)
+    {
+        <tr>
+            <td>@agendamento.Paciente.Nome</td>
+            <td>@agendamento.Medico.Nome</td>
+            <td>@agendamento.DtaAgendamento.ToShortDateString()</td>
+            <td>@agendamento.Hora.ToString()</td>
+            <td>@agendamento.Especialidade</td>
+        </tr>
+    }
+</table>
