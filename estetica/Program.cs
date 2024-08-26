@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ClinicaEsteticaApp.Models;
+using estetica.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

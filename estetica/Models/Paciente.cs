@@ -1,4 +1,4 @@
-﻿namespace ClinicaEsteticaApp.Models
+﻿namespace estetica.Models
 {
     public class Paciente
     {

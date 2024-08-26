@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using estetica.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace ClinicaEsteticaApp.Models
+namespace estetica.Models
 {
     public class ApplicationDbContext : DbContext
     {

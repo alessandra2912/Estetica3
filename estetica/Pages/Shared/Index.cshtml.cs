@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace estetica.Models
+namespace estetica.Pages.Shared
 {
     public class IndexModel : PageModel
     {

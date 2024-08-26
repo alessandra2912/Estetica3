@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using ClinicaEsteticaApp.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using estetica.Models;
 
-namespace ClinicaEsteticaApp.Pages
+namespace estetica.Pages.Shared
 {
     public class CreateModel : PageModel
     {
