@@ -1,0 +1,57 @@
+﻿@page
+@model CadastroMedicoModel
+@{
+    ViewData["Title"] = "Cadastro Médico - Clínica BelleVie";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Se você estiver usando um layout compartilhado
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/CadMed.css">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <form method="post">
+        <h1>Cadastro Médico</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="Nome" required /><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required /><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="Telefone" required /><br><br>
+
+        <label for="crn">CRN:</label>
+        <input type="text" id="crn" name="CRN" required /><br><br>
+
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" name="Especialidade" required>
+            <option value="">Qual a sua especialidade?</option>
+            <option value="Depiladora">Depiladora</option>
+            <option value="Esteticista">Esteticista</option>
+            <option value="Cirurgião plástico">Cirurgião plástico</option>
+            <option value="Cirurgião Dentista">Cirurgião Dentista</option>
+            <option value="Massagista">Massagista</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar" />
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Clínica BelleVie | Todos os direitos reservados</p>
+        <nav>
+            <a asp-page="/Index">Home</a>
+            <a asp-page="/Agendamento">Agendamento</a>
+            <a asp-page="/CadastroMedico">Cadastro Médico</a>
+            <a asp-page="/CadastroCliente">Cadastro Cliente</a>
+            <a asp-page="/SobreNos">Sobre nós</a>
+        </nav>
+    </footer>
+</body>
+</html>

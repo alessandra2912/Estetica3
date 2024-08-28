@@ -1,0 +1,44 @@
+﻿@page
+@model SobreNosModel
+@{
+    ViewData["Title"] = "Sobre Nós - Clínica BelleVie";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Sobre.css">
+</head>
+<body>'990'
+    <nav>
+        <a asp-page="/Index">Home</a>
+        <a asp-page="/Agendamento">Agendamento</a>
+        <a asp-page="/CadastroMedico">Cadastro Médico</a>
+        <a asp-page="/CadastroCliente">Cadastro Cliente</a>
+        <a asp-page="/SobreNos">Sobre nós</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo à BelleVie Beauty, onde a beleza e o bem-estar se encontram para oferecer a você uma experiência única e transformadora.</p>
+            <p>
+                Nossa clínica é um espaço dedicado a realçar a sua beleza natural com o máximo de cuidado e profissionalismo.<br>
+                Com uma equipe de especialistas altamente qualificados e apaixonados pelo que fazem, utilizamos as técnicas mais avançadas e produtos de alta qualidade para atender às suas necessidades individuais.
+            </p>
+            <p>
+                Aqui, entendemos que cada pessoa é única e, por isso, personalizamos nossos tratamentos para garantir que você se sinta confiante e satisfeito com os resultados.
+                Desde procedimentos estéticos de ponta até cuidados personalizados, nosso compromisso é proporcionar resultados excepcionais em um ambiente acolhedor e confortável.
+            </p>
+            <p>
+                Na BelleVie Beauty, acreditamos que a verdadeira beleza vem de dentro, e nosso objetivo é ajudar você a se sentir e parecer a melhor versão de si mesmo.
+                Venha nos conhecer e descubra como podemos realçar a sua beleza de maneira que você sempre desejou.
+            </p>
+            <p>Estamos ansiosos para cuidar de você!</p>
+        </div>
+    </div>
+</body>
+</html>

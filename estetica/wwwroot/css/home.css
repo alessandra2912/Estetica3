@@ -1,0 +1,108 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #D8CAB8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Baket Fashion';
+    font-size: 19px;
+}
+
+nav {
+    background-color: #A67C52;
+    padding: 10px;
+    text-align: center;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+        nav a:hover {
+            background-color: #8B4513;
+        }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.services, .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card, .team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+footer {
+    background-color: #D8CAB8;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 19px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+
+.logo {
+    margin-left: -1750px;
+    margin-top: -100px;
+    margin-bottom: -24px;
+}

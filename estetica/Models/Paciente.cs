@@ -1,4 +1,7 @@
-﻿namespace estetica.Models
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
+
+namespace estetica.Models
 {
     public class Paciente
     {

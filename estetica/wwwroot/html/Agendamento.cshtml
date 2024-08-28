@@ -1,0 +1,79 @@
+﻿@page
+@model AgendamentoModel
+@{
+    ViewData["Title"] = "Agendamento - Clínica BelleVie";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Se estiver usando um layout compartilhado
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/agendamento.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a asp-page="/Index">Home</a>
+            <a asp-page="/Agendamento">Agendamento</a>
+            <a asp-page="/CadastroMedico">Cadastro Médico</a>
+            <a asp-page="/CadastroCliente">Cadastro Cliente</a>
+            <a asp-page="/SobreNos">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Agendamento de Consulta</h1>
+            <form method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Agendamento.Nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Agendamento.Email" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="Agendamento.Data" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="Agendamento.Hora" required>
+
+                <label for="especialidade">Especialidade:</label>
+                <select id="especialidade" name="Agendamento.Especialidade" required>
+                    <option value="">Selecione a especialidade</option>
+                    <option value="Depiladora">Depiladora</option>
+                    <option value="Esteticista">Esteticista</option>
+                    <option value="Cirurgião plástico">Cirurgião plástico</option>
+                    <option value="Cirurgião Dentista">Cirurgião Dentista</option>
+                    <option value="Massagista">Massagista</option>
+                </select>
+
+                <label for="doctor">Médico:</label>
+                <select id="doctor" name="Agendamento.Doctor">
+                    <option value="">Selecione o médico</option>
+                    <option value="Dra. Alessandra Reis">Dra. Alessandra Reis</option>
+                    <option value="Dra. Bianca Fortuna">Dra. Bianca Fortuna</option>
+                    <option value="Dra. Graziele Mota">Dra. Graziele Mota</option>
+                    <option value="Dra. Isabelle Gomes">Dra. Isabelle Gomes</option>
+                    <option value="Dra. Maria Lima">Dra. Maria Lima</option>
+                    <option value="Dr. Gabriel Rocha">Dr. Gabriel Rocha</option>
+                    <option value="Dr. Thiago Santos">Dr. Thiago Santos</option>
+                </select>
+
+                <label for="pagamento">Forma de pagamento:</label>
+                <select id="pagamento" name="Agendamento.Pagamento" required>
+                    <option value="">Selecione uma forma de pagamento</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                </select>
+
+                <br><br>
+                <input type="submit" value="Agendar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

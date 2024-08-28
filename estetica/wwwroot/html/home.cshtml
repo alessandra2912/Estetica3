@@ -1,0 +1,93 @@
+﻿@page
+@model HomeModel
+@{
+    ViewData["Title"] = "Clínica BelleVie";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/home.css"> <!-- Usando '@' para incluir a URL com Razor -->
+</head>
+<body>
+    <header>
+        <h1>@ViewData["Title"]</h1>
+        <div class="logo">
+            <img src="~/images/Logo.png" alt="Logo da Clínica BelleVie" width="120" height="120"> <!-- Usando '@' para o caminho da imagem -->
+        </div>
+    </header>
+
+    <nav>
+        <a asp-page="/Home">Home</a> <!-- Usando Razor para links de páginas -->
+        <a asp-page="/Agendamento">Agendamento</a>
+        <a asp-page="/CadastroMedico">Cadastro Médico</a>
+        <a asp-page="/CadastroCliente">Cadastro Cliente</a>
+        <a asp-page="/SobreNos">Sobre Nós</a>
+    </nav>
+
+    <div id="serviços" class="section">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Harmonização Visual</h3>
+                <p>A harmonização visual melhora a aparência facial e corporal, ajustando proporções para criar um equilíbrio natural e estético.</p>
+            </div>
+            <div class="service-card">
+                <h3>Preenchimento Labial</h3>
+                <p>O preenchimento labial realça e define os lábios, proporcionando um volume e contorno mais equilibrados e naturais.</p>
+            </div>
+            <div class="service-card">
+                <h3>Massagem</h3>
+                <p>A massagem alivia tensões e relaxa o corpo, promovendo bem-estar e recuperação muscular.</p>
+            </div>
+            <div class="service-card">
+                <h3>Limpeza de Pele</h3>
+                <p>A limpeza de pele remove impurezas e células mortas, deixando a pele fresca e radiante.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="equipe" class="section">
+        <h2>Nossa Equipe</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="~/images/DUDAO.jpg" alt="Dr. Dudão Lima">
+                <h3>Dra. Duda Lima</h3>
+                <p>Dentista</p>
+            </div>
+            <div class="team-member">
+                <img src="~/images/Bianca.jpg" alt="Dra. Ana Costa">
+                <h3>Dra. Bianca F.</h3>
+                <p>Cirurgiã Plástica</p>
+            </div>
+            <div class="team-member">
+                <img src="~/images/Ale.jpg" alt="Dr. Lucas Pereira">
+                <h3>Alessandra Reis</h3>
+                <p>Massagista</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="galeria" class="section">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Recepção" alt="Recepção">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Consultório" alt="Consultório">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Sala+de+Exames" alt="Sala de Exames">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Clínica BelleVie | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
